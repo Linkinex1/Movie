@@ -1,0 +1,26 @@
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+.pointer {
+    cursor: pointer;
+}
+
+html {
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+.tile {
+    border: 1px solid rgb(255 255 255 / .1);
+    background-color: #1c1c1c;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin-left: 1rem;
+}
